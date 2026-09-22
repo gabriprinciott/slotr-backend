@@ -1,0 +1,10 @@
+services:
+  api:
+    ports:
+      - "${PORT:-3000}:3000"
+  db:
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+  redis:
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
